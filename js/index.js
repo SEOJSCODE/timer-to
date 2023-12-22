@@ -1,5 +1,5 @@
-import {format, formatDuration} from "./node_modules/date-fns";
-import {ru} from "./node_modules/date-fns/locale";
+import {format, formatDuration} from "../node_modules/date-fns";
+import {ru} from "../node_modules/date-fns/locale";
 
 let formDate = document.querySelector('.date-form')
 formDate.addEventListener('submit', showRemained)
