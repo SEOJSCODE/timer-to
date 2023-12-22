@@ -590,10 +590,8 @@ function showRemained(event) {
     let inputValue = document.querySelector("#add-date");
     let inputData = inputValue.value;
     const inputDate = Date.parse(inputData);
-    const formatDate = (0, _dateFns.format)(inputDate, "MMM dd YYY 00:00:00");
-    const startDate = Date.parse(formatDate);
     const nowDate = new Date();
-    let dif = startDate - nowDate;
+    let dif = inputDate - nowDate;
     const difYear = Math.floor(dif / 1000 / 60 / 60 / 24 / 365);
     const difDays = Math.floor(dif / 1000 / 60 / 60 / 24) % 365;
     const difHours = Math.floor(dif / 1000 / 60 / 60) % 24;
@@ -620,37 +618,7 @@ function showRemained(event) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","date-fns":"dU215","date-fns/locale":"aigPy"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"dU215":[function(require,module,exports) {
+},{"date-fns":"dU215","date-fns/locale":"aigPy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dU215":[function(require,module,exports) {
 "use strict";
 var _index = require("bb476f479aec785f");
 Object.keys(_index).forEach(function(key) {
@@ -66711,6 +66679,36 @@ const match = exports.match = {
     })
 };
 
-},{"3c605c4f9d11ce54":"15lWd","c21df40d4958ad48":"kWqg8"}]},["iSP81","1Z4Rq"], "1Z4Rq", "parcelRequire94c2")
+},{"3c605c4f9d11ce54":"15lWd","c21df40d4958ad48":"kWqg8"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["iSP81","1Z4Rq"], "1Z4Rq", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5d9dacde.js.map
