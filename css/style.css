@@ -1,0 +1,76 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;;
+}
+h1 {
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #303030;
+    border-bottom: 3px solid #5e55d6;
+    width: 368px;
+    font-weight: bold;
+}
+.date-description {
+    margin-bottom: 10px;
+    width: 368px;
+    line-height: normal;
+    color: #303030;
+}
+.main-container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    position: relative;
+}
+.date-block {
+    max-width: 368px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#add-date {
+    border-radius: 8px;
+    border: 1px solid #E2E2E2;
+    width: 380px;
+    font-size: 18px;
+    padding: 14px;
+    margin-right: 42px;
+    margin-bottom: 10px;
+}
+.calculate-button {
+    background: #5E55D6;
+    color: #fff;
+    width: 380px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Remained Block */
+.remained {
+    display: none;
+}
+.remained-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.remained-time {
+    font-size: 25px;
+    font-weight: 600;
+}
+.show-remained {
+    display: block;
+    border: 3px dashed #5e55d6;
+    padding: 10px;
+    width: 380px;
+}
+.show-remained-title {
+    display: block;
+}
